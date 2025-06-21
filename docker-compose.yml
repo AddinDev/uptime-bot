@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  benq:
+    build: .
+    container_name: benq-bot
+    env_file:
+      - .env
+    restart: unless-stopped
